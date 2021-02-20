@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B7E21FA25E0A05A00571406 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7E21F925E0A05A00571406 /* MovieDetailsViewController.swift */; };
 		4BAD540425D606E400B7172C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAD540325D606E400B7172C /* AppDelegate.swift */; };
 		4BAD540625D606E400B7172C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAD540525D606E400B7172C /* SceneDelegate.swift */; };
 		4BAD540B25D606E400B7172C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BAD540925D606E400B7172C /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		48F633A1B9C64AC4439FF5DE /* Pods-flixapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flixapp.release.xcconfig"; path = "Target Support Files/Pods-flixapp/Pods-flixapp.release.xcconfig"; sourceTree = "<group>"; };
+		4B7E21F925E0A05A00571406 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		4BAD540025D606E400B7172C /* flixapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flixapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BAD540325D606E400B7172C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BAD540525D606E400B7172C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				4BAD540325D606E400B7172C /* AppDelegate.swift */,
 				4BAD540525D606E400B7172C /* SceneDelegate.swift */,
 				4BAD540925D606E400B7172C /* Main.storyboard */,
+				4B7E21F925E0A05A00571406 /* MovieDetailsViewController.swift */,
 				4BAD540C25D606E700B7172C /* Assets.xcassets */,
 				4BAD540E25D606E700B7172C /* LaunchScreen.storyboard */,
 				4BAD541125D606E700B7172C /* Info.plist */,
@@ -91,7 +94,6 @@
 				943D818BA13886D1826A58E1 /* Pods-flixapp.debug.xcconfig */,
 				48F633A1B9C64AC4439FF5DE /* Pods-flixapp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B7E21FA25E0A05A00571406 /* MovieDetailsViewController.swift in Sources */,
 				4BAD540425D606E400B7172C /* AppDelegate.swift in Sources */,
 				4BAD540625D606E400B7172C /* SceneDelegate.swift in Sources */,
 				4BAD541D25D77F1300B7172C /* MovieCell.swift in Sources */,
@@ -361,6 +364,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = flixapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -380,6 +384,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = flixapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
