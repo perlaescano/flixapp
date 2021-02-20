@@ -180,14 +180,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="440" height="885"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nEW-Hp-bbR">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nEW-Hp-bbR">
                                     <size key="itemSize" width="177" height="168"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="UDB-ZO-GaC">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieGridCell" id="UDB-ZO-GaC" customClass="MovieGridCell" customModule="flixapp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="177" height="168"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9hv-d9-fZh" customClass="MovieCell" customModule="flixapp" customModuleProvider="target">
@@ -201,6 +201,9 @@
                                             </subviews>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="177" height="168"/>
+                                        <connections>
+                                            <outlet property="posterView" destination="IKV-2Z-QDy" id="Sua-QO-rNY"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -209,6 +212,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Superhero" id="4Jb-Kv-hk3"/>
+                    <connections>
+                        <outlet property="collectionView" destination="glh-vf-7As" id="IeP-Nb-B3t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a3t-0f-74L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
