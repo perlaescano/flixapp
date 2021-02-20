@@ -190,7 +190,7 @@
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="UDB-ZO-GaC">
                                         <rect key="frame" x="0.0" y="0.0" width="177" height="168"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9hv-d9-fZh">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9hv-d9-fZh" customClass="MovieCell" customModule="flixapp" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="177" height="168"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>

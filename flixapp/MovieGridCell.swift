@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 private let reuseIdentifier = "Cell"
 
