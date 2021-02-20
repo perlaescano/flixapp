@@ -20,6 +20,15 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.minimumLineSpacing = 4
+        layout.minimumInteritemSpacing = 4
+        
+        let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2) / 3
+        layout.itemSize = CGSize(width: width, height: width * 3/2)
+        
+        
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
         
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
@@ -31,6 +40,7 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
            } else if let data = data {
               let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
             self.movies = dataDictionary["results"] as! [[String:Any]]
+            self.collectionView.reloadData()
            
             print(self.movies)
               // TODO: Get the array of movies
@@ -48,7 +58,7 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MovieGridCell", for: <#T##IndexPath#>) as! MovieGridCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MovieGridCell", for: indexPath) as! MovieGridCell
         
         let movie = movies[indexPath.item]
         let baseUrl = "https://image.tmdb.org/t/p/w185"

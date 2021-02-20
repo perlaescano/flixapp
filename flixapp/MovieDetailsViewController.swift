@@ -14,6 +14,7 @@ class MovieDetailsViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var synopsisLabel: UILabel!
     var movie: [String:Any]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,7 +28,7 @@ class MovieDetailsViewController: UIViewController {
         synopsisLabel.sizeToFit()
     
         
-        let baseUrl = "https://image.tmdb.org/t/p/w185"
+        let baseUrl = "https://image.tmdb.org/t/p/w780"
         let posterPath = movie["poster_path"] as! String
         let posterUrl = URL(string: baseUrl + posterPath)
         
@@ -37,7 +38,7 @@ class MovieDetailsViewController: UIViewController {
        
         let backdropPath = movie["backdrop_path"] as! String
         let backdropUrl = URL(string: "https://image.tmdb.org/t/p/w780" + backdropPath)
-        posterView.af.setImage(withURL: backdropUrl!)
+        backdropView.af.setImage(withURL: backdropUrl!)
         
         
     }
