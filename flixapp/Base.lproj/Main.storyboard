@@ -65,6 +65,7 @@
                                             <outlet property="posterView" destination="XBL-GJ-7w9" id="9fv-ml-enE"/>
                                             <outlet property="synopsisLabel" destination="rtl-eG-R0X" id="Ki5-aN-wGx"/>
                                             <outlet property="titleLabel" destination="bih-oz-oKR" id="0cM-Sc-FS5"/>
+                                            <segue destination="hL7-mn-H1P" kind="show" id="SIA-iH-iKG"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -100,16 +101,17 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="-164.0625"/>
         </scene>
-        <!--View Controller-->
+        <!--Movie Details View Controller-->
         <scene sceneID="eSb-gb-bao">
             <objects>
-                <viewController id="hL7-mn-H1P" sceneMemberID="viewController">
+                <viewController id="hL7-mn-H1P" customClass="MovieDetailsViewController" customModule="flixapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hge-bD-Rdf" customClass="MovieDetailsView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="RIA-M2-HYc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="WFv-JK-6dY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q77-Cn-PXB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
